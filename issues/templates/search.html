@@ -36,6 +36,7 @@
 
 <body id="page-top">
 
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,7 +72,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+<!--     <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Intralox Customer Issues Management Portal</h1>
@@ -80,84 +81,64 @@
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Add a Customer Issue!</a>
             </div>
         </div>
-    </header>
+    </header> -->
+
 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Don't Reinvent the wheel!</h2>
+                    <h2 class="section-heading">Search!</h2>
+                    <p>Its a good idea to search with the broadest criteria. If you get too many requests, or too little, use the search criteria to narrow your results. </p>
                     <hr class="light">
-                    <p class="text-faded">With over 400 customer service reps solving customer issues every day, your issue has probably already been solved! Look for what has been done and find the solution that works.</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Searching!</a>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Pick one or more search criteria</label>
+                          <div class="radio">
+                            <label>
+                              <input type="radio"> Customer Name
+                            </label>
+                            <label>
+                              <input type="radio"> Issue 
+                            </label>
+                            <label>
+                              <input type="radio"> Solutions
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Fuzzy Search (Allows for spelling mistakes)
+                            </label>
+                            <label>
+                              <input type="checkbox"> Non Fuzzy Search (Exact Match necessary)
+                            </label>
+                          </div>
+
+
+                        <select class="form-control">
+                            <option> Search US Only </option>
+                            <option> Worldwide search </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Query criteria</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Search Terms">
+                        <p class="help-block">Add multiple query terms by seperating them with a comma.</p>
+                      </div>
+
+
+
+                      
+                      <button type="submit" class="btn btn-default">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Save Time</h3>
-                        <p class="text-muted">Customer Issues template helps you save time.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Fast Search</h3>
-                        <p class="text-muted">The portal uses the same technology as google, so your search will be snappy like like google search!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Company wide knowledge at one place</h3>
-                        <p class="text-muted">It is like having all the company'e experts in one room.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Modern technolgy you will love</h3>
-                        <p class="text-muted">The portal is made with modern technology that powers all your favorite websites!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-
-    <section id="contact"  class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">24/7 Support Available for the portal!</h2>
-                    <hr class="primary">
-                    <p>If you get stuck or find that the portal doesn't work as expected, please call the following number! A IT support personnel will be happy to assist you.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@intralox-km-portal.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
     <script src="/static/js/jquery.js"></script>
@@ -172,6 +153,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/static/js/creative.js"></script>
+
+
 
 </body>
 
